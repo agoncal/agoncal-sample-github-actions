@@ -14,6 +14,10 @@ subscription, if you have NOT done so please go to our top-level
 To delete the Resource Group use the following command line:
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-delete/group-delete.sh) -->
+<!-- The below code snippet is automatically added from ../group-delete/group-delete.sh -->
+```sh
+az group delete --name $RESOURCE_GROUP --yes
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Next steps
