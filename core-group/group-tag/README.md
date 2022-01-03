@@ -25,7 +25,7 @@ To create the Resource Group use the following command line:
 
 ## Tag a Resource Group
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-tag.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./group-tag.sh) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Cleanup
