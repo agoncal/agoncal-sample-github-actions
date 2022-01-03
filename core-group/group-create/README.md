@@ -13,44 +13,17 @@ subscription, if you have NOT done so please go to our top-level
 
 To setup the environment variables needed to create the Resource Group execute
 the command lines below:
-
-<!-- workflow.cron(0 1 * * 0) -->
-
-<!-- workflow.skip() -->
-```shell
-  export RESOURCE_GROUP=java-on-azure
-  export REGION=westus2
-```
-
-<!-- workflow.run()
-if [[ -z $RESOURCE_GROUP ]]; then
-  export RESOURCE_GROUP=java-on-azure-$RANDOM
-fi
-export REGION=westus2
-  -->
-
 To create the Resource Group use the following command line:
 
-```shell
-  az group create --name $RESOURCE_GROUP --location $REGION
-```
-
-<!-- workflow.run()
-  export DELETE_AFTER=$(( `date +%s` + 7200))
-  az group update --name $RESOURCE_GROUP --set tags.'DeleteAfter'="$DELETE_AFTER" 
-  -->
-
-<!-- workflow.directOnly()
-export RESULT=$(az group show --name $RESOURCE_GROUP --output tsv --query properties.provisioningState)
-az group delete --name $RESOURCE_GROUP --yes || true
-if [[ "$RESULT" != Succeeded ]]; then
-  exit 1
-fi
-  -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./group-create.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Cleanup
 
 Do NOT forget to remove the resources once you are done running the example.
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-delete/group-delete.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Next steps
 

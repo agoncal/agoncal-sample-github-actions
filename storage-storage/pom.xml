@@ -9,8 +9,8 @@
     <name>Storage :: Storage</name>
 
     <modules>
-        <module>create</module>
-        <module>enable-static-website</module>
-        <module>upload-files-to-static-website</module>
+        <module>storage-create</module>
+        <module>storage-enable-static-website</module>
+        <module>storage-upload-files-to-static-website</module>
     </modules>
 </project>

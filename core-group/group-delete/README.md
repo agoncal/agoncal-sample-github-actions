@@ -13,19 +13,8 @@ subscription, if you have NOT done so please go to our top-level
 
 To delete the Resource Group use the following command line:
 
-<!-- workflow.cron(0 2 * * 0) -->
-<!-- workflow.include(../create/README.md) -->
-
-```shell
- az group delete --name $RESOURCE_GROUP --yes
-```
-
-<!-- workflow.directOnly()
-export RESULT=$(az group show --name $RESOURCE_GROUP --output tsv --query name)
-if [[ "$RESULT" == "$RESOURCE_GROUP" ]]; then
-  exit 1
-fi
-  -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-delete/group-delete.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Next steps
 

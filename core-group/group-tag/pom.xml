@@ -2,15 +2,8 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.agoncal.sample.github-actions</groupId>
-    <artifactId>core-group</artifactId>
+    <groupId>org.agoncal.sample.github-actions.core-group</groupId>
+    <artifactId>group-tag</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>Core :: Group</name>
-
-    <modules>
-        <module>group-create</module>
-        <module>group-delete</module>
-        <module>group-tag</module>
-    </modules>
+    <name>Core :: Group :: Tag</name>
 </project>
