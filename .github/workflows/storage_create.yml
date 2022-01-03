@@ -9,19 +9,13 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - uses: 'actions/checkout@v2'
-      - run: |
-          chmod +x ./setup-env.sh
-          ./setup-env.sh
+      - run: chmod -R +x ./*.sh
         shell: bash
-      - run: |
-          chmod +x ./core-group/group-create/group-create.sh
-          ./core-group/group-create/group-create.sh
+      - run: ./setup-env.sh
         shell: bash
-      - run: |
-          chmod +x ./storage-storage/storage-create/storage-create.sh
-          ./storage-storage/storage-create/storage-create.sh
+      - run: ./core-group/group-create/group-create.sh
         shell: bash
-      - run: |
-          chmod +x ./core-group/group-delete/group-delete.sh
-          ./core-group/group-delete/group-delete.sh
+      - run: ./storage-storage/storage-create/storage-create.sh
+        shell: bash
+      - run: ./core-group/group-delete/group-delete.sh
         shell: bash
