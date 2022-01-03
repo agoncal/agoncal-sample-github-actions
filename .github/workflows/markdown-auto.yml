@@ -10,10 +10,9 @@ jobs:
       - uses: 'dineshsonachalam/markdown-autodocs@v1.0.4'
         with:
           commit_message: 'README.md files have been updated'
-          output_file_paths: >
-          '[
-          ./README.md,
-          ./core-group/group-create/README.md,
-          ./core-group/group-delete/README.md
-          ]'
+          output_file_paths: '[
+            ./README.md,
+            ./core-group/group-create/README.md,
+            ./core-group/group-delete/README.md
+            ]'
           categories: '[code-block]'
