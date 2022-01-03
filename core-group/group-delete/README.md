@@ -12,6 +12,14 @@ subscription, if you have NOT done so please go to our top-level
 ## Setup your environment variables
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../setup-env.sh) -->
+<!-- The below code snippet is automatically added from ../../setup-env.sh -->
+```sh
+if [[ -z $RESOURCE_GROUP ]]; then
+  export RESOURCE_GROUP=java-on-azure-$RANDOM
+fi
+
+export REGION=westus2
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Delete the Resource Group

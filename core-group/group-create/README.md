@@ -12,6 +12,14 @@ subscription, if you have NOT done so please go to our top-level
 ## Setup your environment variables
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../setup-env.sh) -->
+<!-- The below code snippet is automatically added from ../../setup-env.sh -->
+```sh
+if [[ -z $RESOURCE_GROUP ]]; then
+  export RESOURCE_GROUP=java-on-azure-$RANDOM
+fi
+
+export REGION=westus2
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Create the Resource Group
@@ -23,12 +31,6 @@ To create the Resource Group use the following command line:
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./group-create.sh) -->
 <!-- The below code snippet is automatically added from ./group-create.sh -->
 ```sh
-if [[ -z $RESOURCE_GROUP ]]; then
-  export RESOURCE_GROUP=java-on-azure-$RANDOM
-fi
-
-export REGION=westus2
-
 az group create --name $RESOURCE_GROUP --location $REGION
 ```
 <!-- MARKDOWN-AUTO-DOCS:END -->
