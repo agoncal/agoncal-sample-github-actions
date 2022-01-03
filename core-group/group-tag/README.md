@@ -9,6 +9,11 @@ This example assume you are logged into Azure CLI and have set your default
 subscription, if you have NOT done so please go to our top-level
 [README](../../)
 
+## Setup your environment variables
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../setup-env.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
 ## Create the Resource Group
 
 To setup the environment variables needed to create the Resource Group execute
@@ -18,7 +23,7 @@ To create the Resource Group use the following command line:
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-create/group-create.sh) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
-Tag your resource
+## Tag a Resource Group
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-tag.sh) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

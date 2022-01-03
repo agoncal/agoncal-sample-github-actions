@@ -9,6 +9,11 @@ This example assume you are logged into Azure CLI and have set your default
 subscription, if you have NOT done so please go to our top-level
 [README](../../)
 
+## Setup your environment variables
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../setup-env.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
 ## Create the Resource Group
 
 To setup the environment variables needed to create the Resource Group execute
