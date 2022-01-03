@@ -11,11 +11,11 @@ jobs:
       - uses: 'actions/checkout@v2'
       - run: find . -type f -iname "*.sh" -exec chmod +x {} \;
         shell: bash
-      - run: ./setup-env.sh
+      - run: source setup-env.sh
         shell: bash
-      - run: ./core-group/group-create/group-create.sh
+      - run: source core-group/group-create/group-create.sh
         shell: bash
-      - run: ./storage-storage/storage-create/storage-create.sh
+      - run: source storage-storage/storage-create/storage-create.sh
         shell: bash
-      - run: ./core-group/group-delete/group-delete.sh
+      - run: source core-group/group-delete/group-delete.sh
         shell: bash
