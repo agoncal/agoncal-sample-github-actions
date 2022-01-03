@@ -30,7 +30,7 @@ This example assumes you have previously completed the following examples:
 To upload a directory containing your static website use the following command
 line:
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../storage-upload-files-to-static-website.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../storage-storage/storage-enable-static-website/storage-enable-static-website.sh) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Cleanup
