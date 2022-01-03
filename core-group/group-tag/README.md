@@ -12,6 +12,14 @@ subscription, if you have NOT done so please go to our top-level
 ## Setup your environment variables
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../setup-env.sh) -->
+<!-- The below code snippet is automatically added from ../../setup-env.sh -->
+```sh
+if [[ -z $RESOURCE_GROUP ]]; then
+  export RESOURCE_GROUP=java-on-azure-$RANDOM
+fi
+
+export REGION=westus2
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Create the Resource Group
@@ -21,11 +29,20 @@ the command lines below:
 To create the Resource Group use the following command line:
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-create/group-create.sh) -->
+<!-- The below code snippet is automatically added from ../group-create/group-create.sh -->
+```sh
+az group create --name $RESOURCE_GROUP --location $REGION
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Tag a Resource Group
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./group-tag.sh) -->
+<!-- The below code snippet is automatically added from ./group-tag.sh -->
+```sh
+export DELETE_AFTER=$(( `date +%s` + 7200))
+az group update --name $RESOURCE_GROUP --set tags.'DeleteAfter'="$DELETE_AFTER"
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Cleanup
@@ -33,6 +50,10 @@ To create the Resource Group use the following command line:
 Do NOT forget to remove the resources once you are done running the example.
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../group-delete/group-delete.sh) -->
+<!-- The below code snippet is automatically added from ../group-delete/group-delete.sh -->
+```sh
+az group delete --name $RESOURCE_GROUP --yes
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Next steps
