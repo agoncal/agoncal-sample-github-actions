@@ -10,13 +10,13 @@ jobs:
     steps:
       - uses: 'actions/checkout@v2'
       - run: |
-          chmod +x ${GITHUB_WORKSPACE}/setup-env.sh
-          chmod +x ${GITHUB_WORKSPACE}/core-group/group-create/group-create.sh
-          chmod +x ${GITHUB_WORKSPACE}/storage-storage/storage-create/storage-create.sh
-          chmod +x ${GITHUB_WORKSPACE}/core-group/group-delete/group-delete.sh
+          chmod +x ./setup-env.sh
+          chmod +x ./core-group/group-create/group-create.sh
+          chmod +x ./storage-storage/storage-create/storage-create.sh
+          chmod +x ./core-group/group-delete/group-delete.sh
 
-          .${GITHUB_WORKSPACE}/setup-env.sh
-          .${GITHUB_WORKSPACE}/core-group/group-create/group-create.sh
-          .${GITHUB_WORKSPACE}/storage-storage/storage-create/storage-create.sh
-          .${GITHUB_WORKSPACE}/core-group/group-delete/group-delete.sh
+          ./setup-env.sh
+          ./core-group/group-create/group-create.sh
+          ./storage-storage/storage-create/storage-create.sh
+          ./core-group/group-delete/group-delete.sh
         shell: bash
