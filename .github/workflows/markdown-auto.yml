@@ -9,3 +9,4 @@ jobs:
       - uses: 'dineshsonachalam/markdown-autodocs@v1.0.4'
         with:
           commit_message: 'README.md files have been updated'
+          output_file_paths: '[./README.md]'
