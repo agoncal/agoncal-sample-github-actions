@@ -9,13 +9,10 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - uses: 'actions/checkout@v2'
-      - run: find . -type f -iname "*.sh" -exec chmod +x {} \;
-        shell: bash
-      - run: source setup-env.sh
-        shell: bash
-      - run: source core-group/group-create/group-create.sh
-        shell: bash
-      - run: source storage-storage/storage-create/storage-create.sh
-        shell: bash
-      - run: source core-group/group-delete/group-delete.sh
+      - run: |
+          find . -type f -iname "*.sh" -exec chmod +x {} \;
+          source setup-env.sh
+          source core-group/group-create/group-create.sh
+          source storage-storage/storage-create/storage-create.sh
+          source core-group/group-delete/group-delete.sh
         shell: bash
