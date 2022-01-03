@@ -27,7 +27,7 @@ export REGION=westus2
 To delete the Resource Group use the following command line:
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../core-group/group-delete/group-delete.sh) -->
-<!-- The below code snippet is automatically added from ../group-delete/group-delete.sh -->
+<!-- The below code snippet is automatically added from ../../core-group/group-delete/group-delete.sh -->
 ```sh
 az group delete --name $RESOURCE_GROUP --yes
 ```

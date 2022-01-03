@@ -29,7 +29,7 @@ the command lines below:
 To create the Resource Group use the following command line:
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../core-group/group-create/group-create.sh) -->
-<!-- The below code snippet is automatically added from ../group-create/group-create.sh -->
+<!-- The below code snippet is automatically added from ../../core-group/group-create/group-create.sh -->
 ```sh
 az group create --name $RESOURCE_GROUP --location $REGION
 ```
@@ -38,7 +38,7 @@ az group create --name $RESOURCE_GROUP --location $REGION
 ## Tag a Resource Group
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../core-group/group-tag/group-tag.sh) -->
-<!-- The below code snippet is automatically added from ./group-tag.sh -->
+<!-- The below code snippet is automatically added from ../../core-group/group-tag/group-tag.sh -->
 ```sh
 export DELETE_AFTER=$(( `date +%s` + 7200))
 az group update --name $RESOURCE_GROUP --set tags.'DeleteAfter'="$DELETE_AFTER"
@@ -50,7 +50,7 @@ az group update --name $RESOURCE_GROUP --set tags.'DeleteAfter'="$DELETE_AFTER"
 Do NOT forget to remove the resources once you are done running the example.
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../core-group/group-delete/group-delete.sh) -->
-<!-- The below code snippet is automatically added from ../group-delete/group-delete.sh -->
+<!-- The below code snippet is automatically added from ../../core-group/group-delete/group-delete.sh -->
 ```sh
 az group delete --name $RESOURCE_GROUP --yes
 ```
