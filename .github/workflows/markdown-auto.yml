@@ -13,6 +13,10 @@ jobs:
           output_file_paths: '[
             ./README.md,
             ./core-group/group-create/README.md,
-            ./core-group/group-delete/README.md
+            ./core-group/group-delete/README.md,
+            ./core-group/group-tag/README.md,
+            ./storage-storage/storage-create/README.md,
+            ./storage-storage/storage-enable-static-website/README.md,
+            ./storage-storage/storage-upload-files-to-static-website/README.md
             ]'
           categories: '[code-block]'
