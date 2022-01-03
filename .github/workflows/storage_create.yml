@@ -1,0 +1,23 @@
+on:
+  schedule:
+    - cron: '0 1 * * 4'
+  workflow_dispatch:
+
+name: 'storage/create/README.md'
+jobs:
+  validate:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'azure/login@v1'
+        with:
+          allow-no-subscriptions: 'true'
+          creds: '${{ secrets.AZURE_CREDENTIALS }}'
+      - uses: 'actions/checkout@v2'
+      - run: '${GITHUB_WORKSPACE}/setup-env.sh'
+        shell: bash
+      - run: '${GITHUB_WORKSPACE}/core-group/group-create/group-create.sh'
+        shell: bash
+      - run: '${GITHUB_WORKSPACE}/storage-storage/storage-create/storage-create.sh'
+        shell: bash
+      - run: '${GITHUB_WORKSPACE}/core-group/group-delete/group-delete.sh'
+        shell: bash
